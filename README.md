@@ -52,32 +52,26 @@ Variabel-variabel pada The Movies Dataset dataset adalah sebagai berikut:
 ## Modeling
 terdapat 2 model yang digunakan pada sistem rekomendasi:
 - Content Based Filtering.
-![cbf](/img/rcmd_cbf.jpg)
   - memiliki beberapa kelebihan dan kekurangan diantaranya
     - kelebihan metode ini bisa memberikan rekomendasi yang lebih personal dan memiliki rekomendasi yang releven dengan pengguna
     - kekurangan metode ini yaitu konten yang menjadi kurang beragam dikarenakan rekomendasi ini berasal dari apa yang ditonton sebelumnya dan data akan terbatas dan sulit memberikan rekomendasi jika pengguna baru.
-  - rekomendasi yang dihasilkan setelah memasukkan film 'Toy Story' adalah 
+  - rekomendasi yang dihasilkan setelah memasukkan film 'Toy Story'  ![cbf](/img/rcmd_cbf.jpg)
 - Collaborative Filtering.
   - memiliki beberapa kelebihan dan kekurangan diantaranya
     - kelebiham metode ini mudah memberikan rekomendasi pada pengguna baru dan tidak memerlukan detail film
     - kekurangan metode ini yaitu kurang efektif dalam menangani perubahan perefrensi dikarenana interaksi pengguna.
+    - rekomendasi yang didapat dari salah satu pengguna ![cf](/img/rcmd_cf.jpg)
 
 ## Evaluation
 parameter yang digunakan saat proses pelatihan model sistem rekomendasi Collaborative Filtering:
 - menggunakan batch_size 8 dan epoch 10 dan learning_rate 0.001 dengan tujuan model mempelajadi data latih bukan meniru data latih
 - matriks evaluasi yang digunakan yaitu RMSE.
+  
+  ![rmse](/img/rmse.png)
+  
+  bisa dilihat hasil latih dari model, skor RMSE yang didapat sebesar 0.1931 untuk latih dan 0.2051 untuk tes.
+- matriks RMSE mengukur sejauh mana perbedaan hasil prediksi dengan hasil sebenarnya, dengan cara menganmbil rata-rata hasil kuadrat selisih kesalahan prediksi terhadap nilai sebenarnya. oleh sebab itu nilai 0.2051 pada data tes merupakan hasil yang bagus.
+- sehingga sistem rekomendasi dinilai sudah mampu memberikan rekomendasi yang baik dan sesuai dengan pereferensi pengguna
 
 
-
-Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+**---END---**
