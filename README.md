@@ -52,6 +52,7 @@ Variabel-variabel pada The Movies Dataset dataset adalah sebagai berikut:
 ## Modeling
 terdapat 2 model yang digunakan pada sistem rekomendasi:
 - Content Based Filtering.
+![cbf](/img/rcmd_cbf.jpg)
   - memiliki beberapa kelebihan dan kekurangan diantaranya
     - kelebihan metode ini bisa memberikan rekomendasi yang lebih personal dan memiliki rekomendasi yang releven dengan pengguna
     - kekurangan metode ini yaitu konten yang menjadi kurang beragam dikarenakan rekomendasi ini berasal dari apa yang ditonton sebelumnya dan data akan terbatas dan sulit memberikan rekomendasi jika pengguna baru.
