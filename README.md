@@ -83,19 +83,59 @@ terdapat 2 model yang digunakan pada sistem rekomendasi:
   - memiliki beberapa kelebihan dan kekurangan diantaranya
     - kelebiham metode ini mudah memberikan rekomendasi pada pengguna baru dan tidak memerlukan detail film
     - kekurangan metode ini yaitu kurang efektif dalam menangani perubahan perefrensi dikarenana interaksi pengguna.
-    - model ini dipilih 
-    - rekomendasi yang didapat dari salah satu pengguna ![cf](/img/rcmd_cf.jpg)
+    - model ini dipilih karena pada dataset terdapat kolom-kolom yang sesuai dan cocok untuk membuat model pembelajaran mesin ini.
+    - rekomendasi yang didapat dari salah satu pengguna.
+ - menghasilkan prediksi seperti berikut
+
+
+Showing recommendations for users: 175
+=========================================
+Movie with high ratings from user
+-----------------------------------------
+Terminator 3: Rise of the Machines
+-----------------------------------------
+Top 10 movie recommendation
+-----------------------------------------
+Nick of Time
+
+L.A. Confidential
+
+The Breakfast Club
+
+Sister Act
+
+Ghost Dog: The Way of the Samurai
+
+Amélie
+
+A Bridge Too Far
+
+Hairspray
+
+Michael Clayton
+
+Southland Tales
 
 ## Evaluation
-parameter yang digunakan saat proses pelatihan model sistem rekomendasi Collaborative Filtering:
-- menggunakan batch_size 8 dan epoch 10 dan learning_rate 0.001 dengan tujuan model mempelajadi data latih bukan meniru data latih
-- matriks evaluasi yang digunakan yaitu RMSE.
+- Dalam pengukuran presisi dari rekomendasi Content Based Filtering digunakan rumus P = total rekomendasi relevan/total rekomendasi
+- Dilihat dari data yang dimasukkan 'toy story' terdapat 10 rekomendasi dari sistem. 8 daru 10 rekomendasi film mempunyai kemiripan dimana sebuah benda atau hewan yang berbicara / memiliki perilaku seperti manusia. sehingga dapat ditarik kesimpulan bahwa presisi sistem rekomedasi berbasis Content Based Filtering memiliki presisi sebesar 80%
+- parameter yang digunakan saat proses pelatihan model sistem rekomendasi Collaborative Filtering:
+  - menggunakan batch_size 8. penggunaan batch size yang terhitung kecil dari total keseluruhan data dimaksudkan agar model bisa lebih baik dalam mempelajadi data latih
+  - epoch 10. dengan besarnya data latih dan kecilnya batch siza maka jumlah epoch yang banyak menjadi tidak relevan lagi.
+  - learning_rate 0.001 agar model bisa mempelajadi fitur data latih bukan meniru data latih
+  - matriks evaluasi yang digunakan yaitu RMSE. RMSE bekrja dengan mengambil nilai rata-rata kuadrat hasil selisih prediksi dengan nilai sebenarnya.
   
   ![rmse](/img/rmse.png)
   
-  bisa dilihat hasil latih dari model, skor RMSE yang didapat sebesar 0.1931 untuk latih dan 0.2051 untuk tes.
-- matriks RMSE mengukur sejauh mana perbedaan hasil prediksi dengan hasil sebenarnya, dengan cara menganmbil rata-rata hasil kuadrat selisih kesalahan prediksi terhadap nilai sebenarnya. oleh sebab itu nilai 0.2051 pada data tes merupakan hasil yang bagus.
+- bisa dilihat hasil latih dari model, skor RMSE yang didapat sebesar 0.1931 untuk latih dan 0.2051 untuk tes. sehingga bisa disimpulkan banwa model bekreja dengan baik dengan  nilai rata-rata kesalahan sebesar 0.2051.
+- matriks RMSE mengukur sejauh mana perbedaan hasil prediksi dengan hasil sebenarnya.
 - sehingga sistem rekomendasi dinilai sudah mampu memberikan rekomendasi yang baik dan sesuai dengan pereferensi pengguna
 
-
+## Kesimpulan
+- sistem rekomendasi film merupakan merupakan sistem yang bisa memberikan rekomendasi film kepada pengguna berdasarkan pereferensi pengguna.
+- sisten rekomendasi film sama-sama memberikan keuntungan terhadap pengguna dan penyedia.
+- sistem rekomendasi berdasarkan Content Based Filtering memiliki presisi sebesar 80%.
+- sistem rekomendasi berdasarkan Collaborative Filtering memiliki skor RMSE sebesar 0.2051.
+- kedua sistem rekomendasi tersebut bisa memberikan rekomendasi dengan baik sesuai pereferensi pengguna dan dinilai bisa meningkatkan _user expreience_ 
+ 
 **---END---**
