@@ -118,19 +118,19 @@ terdapat 2 model yang digunakan pada sistem rekomendasi:
       - ngram_range=(1, 2). bertujuan untuk mengambil kata tunggal dan pasangan kata
       - min_df=0. bertujuan agar semua data dimasukkan kedalam vektor.
       - stop_words='english'. untuk membuang kata yang tiak memiliki makna seperti (the, and, in, dll)
-  - rekomendasi yang dihasilkan setelah memasukkan film 'Toy Story' sebagi film favorit
-    - Luxo Jr.
-    - Toy Story 2
-    - Cars 2
-    - Cars
-    - A Bug's Life
-    - Toy Story of Terror!
-    - Toy Story 3
-    - Hugo
-    - The Lego Movie
-    - Larry Crowne
-  - peforma dari sistem rekomendasi tersebut bisa dilihat dari persamaan hasi film yang direkomendasikan. 8 dari 10 film memiliki tema yang sama yaitu sebuah benda atau hewan yang bisa berbicara dan
-    berinteraksi seperti manusia. sehingga jika melihat dari komteks tersebut maka model ini memberikan peforma yang bangus.
+  - 10 rekomendasi yang dihasilkan setelah memasukkan film 'Toy Story' sebagi film favorit
+    rekomendasi judul dan genres
+    - Luxo Jr.                [Animation]
+    - Toy Story 2             [Animation, Comedy, Family]
+    - Cars 2                  [Animation, Family, Adventure, Comedy]
+    - Cars                    [Animation, Adventure, Comedy, Family]
+    - A Bug's Life            [Adventure, Animation, Comedy, Family]
+    - Toy Story of Terror!    [Animation, Comedy, Family]    
+    - Toy Story 3             [Animation, Family, Comedy]
+    - Hugo                    [Adventure, Drama, Family]
+    - The Lego Movie          [Adventure, Animation, Comedy, Family, Fantasy]
+    - Larry Crowne            [Comedy, Romance, Drama]
+  - peforma dari sistem rekomendasi tersebut bisa dilihat dari persamaan hasi film yang direkomendasikan. 8 dari 10 film memiliki genre yang sama yaitu _animation_ sehingga jika melihat dari komteks tersebut maka model ini memberikan peforma yang bangus.
 
 - Collaborative Filtering.
   - algoritma Collaborative Filtering
