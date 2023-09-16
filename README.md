@@ -175,8 +175,7 @@ Southland Tales
 
 ## Evaluation
 - Dalam pengukuran presisi dari rekomendasi Content Based Filtering digunakan rumus P = total rekomendasi relevan/total rekomendasi
-- Dilihat dari data yang dimasukkan 'toy story' terdapat 10 rekomendasi dari sistem. 8 daru 10 rekomendasi film mempunyai kemiripan dimana sebuah benda atau hewan yang berbicara / memiliki perilaku
-  seperti manusia. sehingga dapat ditarik kesimpulan bahwa presisi sistem rekomedasi berbasis Content Based Filtering memiliki presisi sebesar 80%
+- Dilihat dari data yang dimasukkan 'toy story' terdapat 10 rekomendasi dari sistem. 8 daru 10 rekomendasi film mempunyai kemiripan pada genre _animation_ sehingga dapat ditarik kesimpulan bahwa presisi sistem rekomedasi berbasis Content Based Filtering memiliki presisi sebesar 80%
 - parameter yang digunakan saat proses pelatihan model sistem rekomendasi Collaborative Filtering:
   - menggunakan batch_size 8. penggunaan batch size yang terhitung kecil dari total keseluruhan data dimaksudkan agar model bisa lebih baik dalam mempelajadi data latih
   - epoch 10. dengan besarnya data latih dan kecilnya batch siza maka jumlah epoch yang banyak menjadi tidak relevan lagi.
