@@ -146,13 +146,13 @@ terdapat 2 model yang digunakan pada sistem rekomendasi:
 
 
 Showing recommendations for users: 175
-=========================================
+
 Movie with high ratings from user
------------------------------------------
+
 Terminator 3: Rise of the Machines
------------------------------------------
+
 Top 10 movie recommendation
------------------------------------------
+
 Nick of Time
 
 L.A. Confidential
